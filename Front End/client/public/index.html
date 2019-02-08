@@ -13,6 +13,23 @@
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Firebase code-->
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "",
+        authDomain: "omni-chat-4c722.firebaseapp.com",
+        databaseURL: "https://omni-chat-4c722.firebaseio.com",
+        projectId: "omni-chat-4c722",
+        storageBucket: "omni-chat-4c722.appspot.com",
+        messagingSenderId: "1062973285656"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <!-- Firebase code-->
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
